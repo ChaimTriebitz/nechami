@@ -13,7 +13,7 @@ export default function Home() {
          </header>
 
          <main >
-            <section className='card'>
+            <section className='moderator'>
                <h2>מנחה הקורס</h2>
                <div className='details' >
                   <div className="img">
@@ -27,8 +27,8 @@ export default function Home() {
                   </div>
                   <div className='content'>
                      <h3 >עו״ד נחמי מייזליש וולק</h3>
-                     <h4 >שותפה וראשת מחלקת דיני נזיקין במשרד</h4>
-                     <h5>הדד, רוט, שנהר ושות׳ - משרד עורכי דין</h5>
+                     <h5 >שותפה וראשת מחלקת דיני נזיקין במשרד</h5>
+                     <h6>הדד, רוט, שנהר ושות׳ - משרד עורכי דין</h6>
                      <a
                         href="https://har.law/har_lawyers/%d7%a0%d7%97%d7%9e%d7%99-%d7%9e%d7%99%d7%99%d7%96%d7%9c%d7%99%d7%a9-%d7%95%d7%95%d7%9c%d7%a7/"
                         target="_blank"
@@ -40,31 +40,42 @@ export default function Home() {
                </div>
             </section>
 
-            <section >
+            <section className='agenda'>
                <h2>לוח זמנים</h2>
-               <p >חמישה מפגשים בימי שלישי, 17:30-20:15</p>
-               <div >
-                  <div >
-                     מפגש ראשון
-                     <span>תאריך יפורסם בהמשך</span>
-                  </div>
-                  <div className="meeting-card">
-                     מפגש שני
-                     <span>תאריך יפורסם בהמשך</span>
-                  </div>
-                  <div className="meeting-card">
-                     מפגש שלישי
-                     <span>תאריך יפורסם בהמשך</span>
-                  </div>
-                  <div className="meeting-card">
-                     מפגש רביעי
-                     <span>תאריך יפורסם בהמשך</span>
-                  </div>
-                  <div className="meeting-card">
-                     מפגש חמישי
-                     <span>תאריך יפורסם בהמשך</span>
-                  </div>
-               </div>
+               <h3>חמישה מפגשים בימי שלישי</h3>
+               <h3>17:30 - 20:15</h3>
+               <ul>
+                  <li >
+                     <b>
+                        מפגש ראשון:
+                     </b>
+                     <p>תאריך יפורסם בהמשך</p>
+                  </li>
+                  <li >
+                     <b>
+                        מפגש שני:
+                     </b>
+                     <p>תאריך יפורסם בהמשך</p>
+                  </li>
+                  <li >
+                     <b>
+                        מפגש שלישי:
+                     </b>
+                     <p>תאריך יפורסם בהמשך</p>
+                  </li>
+                  <li >
+                     <b>
+                        מפגש רביעי:
+                     </b>
+                     <p>תאריך יפורסם בהמשך</p>
+                  </li>
+                  <li >
+                     <b>
+                        מפגש חמישי:
+                     </b>
+                     <p>תאריך יפורסם בהמשך</p>
+                  </li>
+               </ul>
             </section>
 
             <section >

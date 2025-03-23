@@ -1,9 +1,11 @@
 $c1: #5cdfe5;
-$c2: #0097a3;
-$c3: #a19e9e;
-$c4: #636363;
-$c5: #323232;
+$c2: #307275;
+$c3: #0097a3;
+$c4: #a19e9e;
+$c5: #636363;
+$c6: #323232;
 
-$g1: linear-gradient(45deg, $c1, $c2);
+$g1: linear-gradient($c3, $c2, $c1);
+$g2: linear-gradient($c6, $c5, $c4);
 
 $mobile: 700px;

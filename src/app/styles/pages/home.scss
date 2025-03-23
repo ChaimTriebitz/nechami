@@ -3,8 +3,8 @@
 
 
 .page {
-   background: $c4;
-   color: $c1;
+   background: $g2;
+   color: $c4;
 
    header,
    main,
@@ -12,18 +12,41 @@
       padding: 1em;
    }
 
-   .card {
+   header {
+      h1 {
+         color: white;
+         text-align: center;
+      }
+
+      h2 {
+         // color: white;
+         text-align: center;
+      }
+   }
+
+   section {
+      padding: 1em;
+      background: $c6;
+   }
+
+   section.moderator {
       border-radius: 10px;
       background: $g1;
       padding: 1em;
+      gap: 1em;
 
       h2 {
          color: white;
+
+         @media (max-width:$mobile) {
+            text-align: center;
+         }
       }
 
       .details {
          flex-direction: row;
-         color: $c5;
+         gap: 2em;
+         color: $c6;
 
          @media (max-width:$mobile) {
             flex-direction: column;
@@ -35,22 +58,46 @@
             overflow: hidden;
             box-shadow: 0 0 2px 2px $c4;
             border-radius: 50%;
-            
-            
+
+
             img {
                object-position: 0 -15px;
             }
          }
 
-         div {
-
+         .content {
             justify-content: center;
+
+            @media (max-width:$mobile) {
+               align-items: center;
+            }
          }
 
       }
 
 
 
+
+
+   }
+
+   section.agenda {
+      align-items: center;
+
+      ul {
+         margin: auto;
+
+         li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2em;
+
+            b {
+               font-weight: bold;
+            }
+         }
+      }
 
 
    }
