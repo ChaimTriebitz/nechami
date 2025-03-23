@@ -1,0 +1,21 @@
+{
+   "name": "קורס רשלנות רפואית",
+   "short_name": "קורס רשלנות רפואית",
+   "description": "קורס מקצועי לעורכי דין בתחום תביעות רשלנות רפואית",
+   "start_url": "/",
+   "display": "standalone",
+   "background_color": "#ffffff",
+   "theme_color": "#2c3e50",
+   "icons": [
+      {
+         "src": "/icons/android/web-app-manifest-192x192.png",
+         "sizes": "192x192",
+         "type": "image/png"
+      },
+      {
+         "src": "/icons/android/web-app-manifest-512x512.png",
+         "sizes": "512x512",
+         "type": "image/png"
+      }
+   ]
+}

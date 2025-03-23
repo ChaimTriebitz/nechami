@@ -1,0 +1,57 @@
+@use '../basics/vars.scss' as *;
+
+
+
+.page {
+   background: $c4;
+   color: $c1;
+
+   header,
+   main,
+   footer {
+      padding: 1em;
+   }
+
+   .card {
+      border-radius: 10px;
+      background: $g1;
+      padding: 1em;
+
+      h2 {
+         color: white;
+      }
+
+      .details {
+         flex-direction: row;
+         color: $c5;
+
+         @media (max-width:$mobile) {
+            flex-direction: column;
+            align-items: center;
+         }
+
+         .img {
+            aspect-ratio: 1;
+            overflow: hidden;
+            box-shadow: 0 0 2px 2px $c4;
+            border-radius: 50%;
+            
+            
+            img {
+               object-position: 0 -15px;
+            }
+         }
+
+         div {
+
+            justify-content: center;
+         }
+
+      }
+
+
+
+
+
+   }
+}
