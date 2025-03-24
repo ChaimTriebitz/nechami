@@ -26,16 +26,22 @@ export default function Home() {
                      />
                   </div>
                   <div className='content'>
-                     <h3 >עו״ד נחמי מייזליש וולק</h3>
-                     <h5 >שותפה וראשת מחלקת דיני נזיקין במשרד</h5>
-                     <h6>הדד, רוט, שנהר ושות׳ - משרד עורכי דין</h6>
-                     <a
+                  <a
                         href="https://har.law/har_lawyers/%d7%a0%d7%97%d7%9e%d7%99-%d7%9e%d7%99%d7%99%d7%96%d7%9c%d7%99%d7%a9-%d7%95%d7%95%d7%9c%d7%a7/"
                         target="_blank"
                         rel="noopener noreferrer"
                      >
-                        למידע נוסף
+                        <Image
+                         src="/har.png"
+                         alt="עו״ד נחמי וולק"
+                         width={50}
+                         height={50}
+                        />
                      </a>
+                     <h3 >עו״ד נחמי מייזליש וולק</h3>
+                     <h5 >שותפה וראשת מחלקת דיני נזיקין במשרד</h5>
+                     <h6>הדד, רוט, שנהר ושות׳ - משרד עורכי דין</h6>
+                    
                   </div>
                </div>
             </section>
@@ -78,20 +84,17 @@ export default function Home() {
                </ul>
             </section>
 
-            <section >
+            <section className='costing'>
                <h2>עלות הקורס</h2>
-               <div >
-                  <div >
-                     <h3>מחיר רגיל</h3>
-                     <p>1,900 ₪</p>
-                     <span>+ מע״מ</span>
-                  </div>
-                  <div >
-                     <div >הרשמה מוקדמת</div>
-                     <h3>הרשמה מוקדמת</h3>
-                     <p>1,450 ₪</p>
-                     <span>+ מע״מ</span>
-                  </div>
+               <div className='cost'>
+                  <h3>מחיר רגיל</h3>
+                  <p>1,900 ₪</p>
+                  <span>+ מע״מ</span>
+               </div>
+               <div className='cost'>
+                  <h3>הרשמה מוקדמת</h3>
+                  <p>1,450 ₪</p>
+                  <span>+ מע״מ</span>
                </div>
                <p >התשלום אפשרי רק באמצעות העברה בנקאית למשרד</p>
             </section>

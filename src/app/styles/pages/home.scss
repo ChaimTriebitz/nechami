@@ -14,12 +14,12 @@
 
    header {
       h1 {
-         color: white;
+         color: $c1;
          text-align: center;
       }
 
       h2 {
-         // color: white;
+         color: white;
          text-align: center;
       }
    }
@@ -27,15 +27,11 @@
    section {
       padding: 1em;
       background: $c6;
-   }
-
-   section.moderator {
+      color: $c1;
       border-radius: 10px;
-      background: $g1;
-      padding: 1em;
-      gap: 1em;
 
       h2 {
+
          color: white;
 
          @media (max-width:$mobile) {
@@ -43,62 +39,80 @@
          }
       }
 
-      .details {
-         flex-direction: row;
-         gap: 2em;
-         color: $c6;
-
-         @media (max-width:$mobile) {
-            flex-direction: column;
-            align-items: center;
-         }
-
-         .img {
-            aspect-ratio: 1;
-            overflow: hidden;
-            box-shadow: 0 0 2px 2px $c4;
-            border-radius: 50%;
+      &.moderator {
+         background: $g1;
+         gap: 1em;
 
 
-            img {
-               object-position: 0 -15px;
-            }
-         }
 
-         .content {
-            justify-content: center;
+         .details {
+            flex-direction: row;
+            gap: 1em;
+            color: $c6;
 
             @media (max-width:$mobile) {
+               flex-direction: column;
                align-items: center;
             }
+
+            .img {
+               aspect-ratio: 1;
+               overflow: hidden;
+               box-shadow: 0 0 2px 2px $c4;
+               border-radius: 50%;
+
+
+               img {
+                  object-position: 0 -15px;
+               }
+            }
+
+            .content {
+               justify-content: center;
+
+               @media (max-width:$mobile) {
+                  align-items: center;
+               }
+            }
+
          }
+
+
+
+
 
       }
 
+      &.agenda {
+         align-items: center;
 
+         h3 {}
 
+         ul {
+            margin: auto;
 
+            li {
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+               gap: 2em;
 
-   }
-
-   section.agenda {
-      align-items: center;
-
-      ul {
-         margin: auto;
-
-         li {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 2em;
-
-            b {
-               font-weight: bold;
+               b {
+                  font-weight: bold;
+               }
             }
          }
+
+
       }
 
-
+      &.costing {
+         .cost {
+            flex-direction: row;
+            align-items: baseline;
+         }
+      }
    }
+
+
 }
