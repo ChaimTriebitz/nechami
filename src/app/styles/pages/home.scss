@@ -3,8 +3,50 @@
 
 
 .page {
+   gap: 0;
    background: $g2;
    color: $c4;
+   background-color: #323232;
+   opacity: 1;
+   background-image: linear-gradient(30deg,
+         #5cdfe520 12%,
+         transparent 12.5%,
+         transparent 87%,
+         #5cdfe520 87.5%,
+         #5cdfe520),
+      linear-gradient(150deg,
+         #5cdfe520 12%,
+         transparent 12.5%,
+         transparent 87%,
+         #5cdfe520 87.5%,
+         #5cdfe520),
+      linear-gradient(30deg,
+         #5cdfe520 12%,
+         transparent 12.5%,
+         transparent 87%,
+         #5cdfe520 87.5%,
+         #5cdfe520),
+      linear-gradient(150deg,
+         #5cdfe520 12%,
+         transparent 12.5%,
+         transparent 87%,
+         #5cdfe520 87.5%,
+         #5cdfe520),
+      linear-gradient(60deg,
+         #5cdfe510 25%,
+         transparent 25.5%,
+         transparent 75%,
+         #5cdfe510 75%,
+         #5cdfe510),
+      linear-gradient(60deg,
+         #5cdfe510 25%,
+         transparent 25.5%,
+         transparent 75%,
+         #5cdfe510 75%,
+         #5cdfe510);
+
+   background-size: 24px 42px;
+   background-position: 0 0, 0 0, 12px 21px, 12px 21px, 0 0, 12px 21px;
 
    header,
    main,
@@ -16,12 +58,18 @@
       h1 {
          color: $c1;
          text-align: center;
+         font-size: 3em;
+         text-shadow: -2px -2px 2px $c6;
       }
 
       h2 {
-         color: white;
+         color: $c1;
          text-align: center;
       }
+   }
+
+   main {
+      gap: 2em;
    }
 
    section {
@@ -29,10 +77,12 @@
       background: $c6;
       color: $c1;
       border-radius: 10px;
+      gap: 0;
+      align-items: center;
 
       h2 {
 
-         color: white;
+         color: $c3;
 
          @media (max-width:$mobile) {
             text-align: center;
@@ -40,7 +90,7 @@
       }
 
       &.moderator {
-         background: $g1;
+         // background: $g1;
          gap: 1em;
 
 
@@ -48,7 +98,7 @@
          .details {
             flex-direction: row;
             gap: 1em;
-            color: $c6;
+            // color: $c6;
 
             @media (max-width:$mobile) {
                flex-direction: column;
@@ -77,16 +127,21 @@
 
          }
 
-
+.content{
+   a{
+   
+      background: white;
+   }
+}
 
 
 
       }
 
       &.agenda {
-         align-items: center;
-
-         h3 {}
+         h3 {
+            text-align: center;
+         }
 
          ul {
             margin: auto;
@@ -96,6 +151,9 @@
                align-items: center;
                justify-content: space-between;
                gap: 2em;
+               color: white;
+               text-decoration: underline;
+               text-underline-offset: 2px;
 
                b {
                   font-weight: bold;
@@ -110,6 +168,20 @@
          .cost {
             flex-direction: row;
             align-items: baseline;
+         }
+      }
+
+      &.location {
+         .links {
+            flex-direction: row;
+            justify-content: center;
+
+            a {
+               height: 50px;
+               width: 50px;
+               display: flex;
+               justify-content: center;
+            }
          }
       }
    }
