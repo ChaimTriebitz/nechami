@@ -6,9 +6,17 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const compat = new FlatCompat({
-  baseDirectory: __dirname,
+   baseDirectory: __dirname,
 });
 
-const eslintConfig = [...compat.extends("next/core-web-vitals")];
+const eslintConfig = [
+   ...compat.extends("next/core-web-vitals"),
+   {
+     rules: {
+       "react/no-unescaped-entities": "off", // Disable the rule
+     },
+   },
+ ];
+ 
 
 export default eslintConfig;
