@@ -3,7 +3,7 @@
 This is a simple landing page built with Next.js designed by me😊.
 
 ## Live Demo 🚀  
-[![🖱️ Click here to try it out!](https://img.shields.io/badge/Try%20it%20Now%20🚀-blue?style=for-the-badge)](https://nechami-8yd9.onrender.com/)
+[![🖱️ Click here to try it out!](https://img.shields.io/badge/Try%20it%20Now%20🚀-blue?style=for-the-badge)](https://nechami.vercel.app/)
 
 ## Features
 - Responsive design
